@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url('3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 767px) {
+    body {
+      background-position: center;
+    }
+}
+header,footer {
+    background-color: rgba(105, 105, 105, 0.2);
+}
+.title {
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.form-bg {
+    background-color: rgba(105, 105, 105, 0.2);
+}
+.submit {
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-family:Geneva, Verdana, sans-serif;
+    border: 0;
+    transition: 0.2s;
+}
+.submit:hover:not(:disabled) {
+    background-image: linear-gradient(to right, blue, violet);
+    border-radius: 10px;
+}
+.submit:disabled {
+    background-color: rgba(105, 105, 105, 0.5);
+}
+.form-control {
+    background: transparent;
+    border-radius: 10px;
+    transition: 0.2s;
+    color: white;
+}
+.form-control:focus {
+    background: transparent;
+    border-radius: 3px;
+    border-color: white;
+    color: white;
+}
+.form-control::placeholder {
+    color: white;
+}
+.form-control:focus::placeholder {
+    opacity: 50%;
+}
+.text-danger {
+    font-size: 13px;
+}
+.thankyou {
+    width: auto;
+}
